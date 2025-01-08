@@ -13,16 +13,23 @@ public class Lutador {
     private int empates;
     private int pontos;
 
-    public Lutador(String no, String na, int id, float al, float pe, int vi, int de, int em) {
+    public Lutador(String nome,
+            String nacio,
+            int idade,
+            float altura,
+            float peso,
+            int vitorias,
+            int derrotas,
+            int empates) {
 
-        this.nome = no;
-        this.nacionalidade = na;
-        this.idade = id;
-        this.altura = al;
-        this.setPeso(pe);
-        this.vitorias = vi;
-        this.derrotas = de;
-        this.empates = em;
+        this.nome = nome;
+        this.nacionalidade = nacio;
+        this.idade = idade;
+        this.altura = altura;
+        this.setPeso(peso);
+        this.vitorias = vitorias;
+        this.derrotas = derrotas;
+        this.empates = empates;
 
     }
 
