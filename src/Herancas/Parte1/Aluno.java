@@ -1,4 +1,4 @@
-package Herancas;
+package Herancas.Parte1;
 
 public class Aluno extends Pessoa {
 
