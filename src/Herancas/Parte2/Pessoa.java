@@ -12,6 +12,15 @@ public abstract class Pessoa {
     }
 
     //metodos setters e getters
+
+    @Override
+    public String toString() {
+        return "{" +
+            " nome='" + getNome() + "'" +
+            ", idade='" + getIdade() + "'" +
+            ", sexo='" + getSexo() + "'" +
+            "}";
+    }
     public String getNome() {
         return this.nome;
     }

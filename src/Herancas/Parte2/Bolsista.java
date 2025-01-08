@@ -1,19 +1,19 @@
 package Herancas.Parte2;
 
 public class Bolsista extends Aluno {
-    private int bolsa;
+    private float bolsa;
 
     public void renovarBolsa(){
-
+        System.out.println("Renovando bolsa do aluno " + this.getNome());
     }
 
     @Override
     public void pagarMensalidade(){
-
+        System.out.println(this.getNome() + " é bolsista! Pagamento facilitado!");
     }
 
     //metodos setters e getters
-    public int getBolsa() {
+    public float getBolsa() {
         return this.bolsa;
     }
 

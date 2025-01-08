@@ -5,7 +5,7 @@ public class Aluno extends Pessoa {
     private String curso;
 
     public void pagarMensalidade(){
-
+        System.out.println("\nPagando mensalidade do aluno " + this.getNome());
     }
 
     //metodos setters e getters
