@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Funcoes {
-    ArrayList<Aluno> listAlunos = new ArrayList<>();
+    private ArrayList<Aluno> listAlunos = new ArrayList<>();
     Scanner sc = new Scanner(System.in);
 
     public void adicionarAluno(){
@@ -13,12 +13,18 @@ public class Funcoes {
         String nome = sc.nextLine();
         System.out.print("Digite a idade: ");
         int idade = sc.nextInt();
+        sc.nextLine();
 
         Aluno aluno = new Aluno(nome, idade);
         aluno.adicionarNotas();
+        listAlunos.add(aluno);
         System.out.println("Aluno cadastrado!");
         System.out.println("");
     }
 
-
+    public void listarAlunos(){
+        for (Aluno a: listAlunos){
+            a.listar();
+        }
+    }
 }

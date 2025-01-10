@@ -21,11 +21,29 @@ public class Aluno {
     }
 
     public void adicionarNotas(){
+        float prov;
         System.out.println("  --Notas do aluno");
-        for (int i = 1; i <= 3; i++){
+        for (int i = 1; Notas.size() < 3; i++){
             System.out.print("  Digite a " + i + "ª nota: ");
-            Notas.add(sc.nextFloat());
+            prov = sc.nextFloat();
+
+            if(prov <= 10 && prov >= 0){
+                Notas.add(prov);
+            } else {
+                System.out.println("  \nNota inserida invalida! Nao ocorreu save da nota");
+                i--;
+            }
         }
+    }
+
+    public void listar(){
+        System.out.println("Nome: " + this.nome +
+                " | Idade: " + this.idade +
+                " | Matricula: " + this.matricula);
+        System.out.println(" -Notas" +
+                "\n 1Bi: " + this.Notas.get(0) +
+                "\n 2Bi: " + this.Notas.get(1) +
+                "\n 3Bi: " + this.Notas.get(2) + "\n");
     }
 
     //setters e getters
