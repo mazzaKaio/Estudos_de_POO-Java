@@ -1,4 +1,4 @@
-package Polimorfismo.Parte1;
+package Polimorfismo.Sobreposicao;
 
 public abstract class Animal {
     protected float peso;

@@ -1,4 +1,4 @@
-package Polimorfismo.Parte1;
+package Polimorfismo.Sobreposicao;
 
 public class Main {
     public static void main(String[] args) {

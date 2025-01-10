@@ -1,4 +1,4 @@
-package Polimorfismo.Parte1;
+package Polimorfismo.Sobreposicao;
 
 public class Reptil extends Animal {
     private String corEscama;

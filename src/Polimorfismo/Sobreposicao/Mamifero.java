@@ -1,4 +1,4 @@
-package Polimorfismo.Parte1;
+package Polimorfismo.Sobreposicao;
 
 public class Mamifero extends Animal {
     private String corPelo;

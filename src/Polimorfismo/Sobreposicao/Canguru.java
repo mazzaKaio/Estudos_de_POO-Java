@@ -1,4 +1,4 @@
-package Polimorfismo.Parte1;
+package Polimorfismo.Sobreposicao;
 
 public class Canguru extends Mamifero {
     public void usarBolsa(){
