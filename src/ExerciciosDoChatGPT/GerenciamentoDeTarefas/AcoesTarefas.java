@@ -22,16 +22,7 @@ public class AcoesTarefas {
         System.out.print("--Digite o prazo para a tarefa (dd-MM-yyyy): ");
         String prazo = sc.nextLine();
 
-        try {
-            LocalDate dataPrazo = LocalDate.parse(prazo, formatter);
-
-            Tarefa tarefa = new Tarefa(descricao, dataPrazo);
-            tarefas.add(tarefa);
-
-            System.out.println("\n-Tarefa cadastrada com sucesso!");
-        } catch (DateTimeParseException e) {
-            System.out.println("\n-Formato de data inserido inválido! Siga o formato correto");
-        }
+        verifData(prazo, descricao);
     }
 
     public void listarTarefas() {
@@ -177,5 +168,20 @@ public class AcoesTarefas {
             }
         }
         return null;
+    }
+
+    private void verifData(String prazo, String descricao){
+        while (true)
+            try {
+                LocalDate dataPrazo = LocalDate.parse(prazo, formatter);
+
+                Tarefa tarefa = new Tarefa(descricao, dataPrazo);
+                tarefas.add(tarefa);
+
+                System.out.println("\n-Tarefa cadastrada com sucesso!");
+                break;
+            } catch (DateTimeParseException e) {
+                System.out.println("\n-Formato de data inserido inválido! Siga o formato correto");
+            }
     }
 }
