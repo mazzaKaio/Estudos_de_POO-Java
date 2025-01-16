@@ -11,7 +11,19 @@ public class Gafanhoto extends Pessoa {
     }
 
     public void viuMaisUm(){
+        this.totAssistido++;
+    }
 
+    @Override
+    public String toString() {
+        return "Gafanhoto{" +
+                "login='" + this.login + '\'' +
+                ", totAssistido=" + this.totAssistido +
+                ", nome='" + this.nome + '\'' +
+                ", idade=" + this.idade +
+                ", sexo='" + this.sexo + '\'' +
+                ", experiencia=" + this.experiencia +
+                '}';
     }
 
     //setters e getters
