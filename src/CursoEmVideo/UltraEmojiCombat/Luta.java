@@ -15,6 +15,7 @@ public class Luta {
             this.aprovada = true;
             this.desafiado = l1;
             this.desafiante = l2;
+            System.out.println("\n--Luta marcada!!!!!!!");
         } else {
             System.out.println("\n--Luta não pode ser marcada!");
             this.aprovada = false;
